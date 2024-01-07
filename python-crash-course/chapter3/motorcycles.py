@@ -55,3 +55,31 @@ print(motorcycles)
 popped_motorcycles = motorcycles.pop()
 print(motorcycles)
 print(popped_motorcycles)
+
+## Popping Item from an Position in a List
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+
+first_owned = motorcycles.pop(0)
+print(f"The first motorcycle I owned was a {first_owned.title()}.")
+# *! note: Each time you use pop(), the item you work with is no longer stored in the list.
+
+# *? Removing an Item by Value
+# Sometimes you won't knwo the position of the value you want to remove from a list. You can use the remove method with the value of the item to do this
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+
+motorcycles.remove('ducati')
+print(motorcycles)
+
+# Using the value being remove
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive)
+
+messages = f"The {too_expensive.title()} is the most expensive in the list here {motorcycles}."
+print(messages)

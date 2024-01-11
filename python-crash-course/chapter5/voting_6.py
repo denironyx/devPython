@@ -15,3 +15,15 @@ if age >= 18:
 else:
     print("Sorry, you are too youngg to vote.")
     print("Please register to vote as soon as you turn 18!")
+    
+# admission cost is $25
+age = 12
+
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 25
+else:
+    price = 40
+
+print(f'Your admission cost is ${price}.')

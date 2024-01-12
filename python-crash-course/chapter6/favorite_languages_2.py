@@ -8,3 +8,23 @@ favourite_languages = {
 
 language = favourite_languages['sarah'].title()
 print(f"Sarah's favourite language is {language}.")
+
+
+## looping through
+for name, language in favourite_languages.items():
+    print(f"{name.title()}'s favourite language is {language.title()}.")
+    
+for name in favourite_languages.keys():
+    print(name.title())
+    
+for value in favourite_languages.keys():
+    print(value)
+    
+##
+friends = ['phil', 'sarah']
+for name in favourite_languages.keys():
+    print(name.title())
+    
+    if name in friends:
+        language = favourite_languages[name].title()
+        print(f"\t{name.title()}, I see you love {language}!")

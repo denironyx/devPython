@@ -93,3 +93,6 @@ for alien_number in range(30):
 for alien in aliens[:5]:
     print(alien)
 print(".....")
+
+# show how many aliens have been created.
+print(f"Total number of aliens: {len(aliens)}")

@@ -25,5 +25,22 @@ elif age < 18:
     price = 25
 else:
     price = 40
+    
 
 print(f'Your admission cost is ${price}.')
+
+## Using a while True
+while True:
+    age = int(input("Enter age (enter -1 to exit): "))
+
+    if age == -1:
+        break  # Exit the loop if -1 is entered
+
+    if age < 4:
+        price = 0
+    elif age < 18:
+        price = 25
+    else:
+        price = 40
+
+    print(f"The price for age {age} is ${price}")

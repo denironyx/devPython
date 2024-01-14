@@ -9,3 +9,13 @@ print(f"\nHello, {name}!")
 
 #the operator += takes the string that was assigned to prompt and adds the new string onto the end.
 
+### Using int() to Accept Numerical Input
+age = input("How old are you? ")
+print(age)
+
+age >= 18
+
+## to fix this
+age = input("How old are you? ")
+age = int(age)
+age >= 18

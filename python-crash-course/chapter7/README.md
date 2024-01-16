@@ -40,3 +40,12 @@ that counts from 1 to 10 but prints only the odd numbers in that range:
 ```
 chapter7/counting.py
 ```
+
+#### Using a while Loop with Lists and Dictionaries
+The next time through the `while` loop, we’d receive another input value
+and respond to that. But to keep track of many users and pieces of information,
+we’ll need to use lists and dictionaries with our `while` loops.
+
+`for` loop is effective for looping through a list, but you shouldn’t modify
+a list inside a for loop because Python will have trouble keeping track of the
+items in the list.

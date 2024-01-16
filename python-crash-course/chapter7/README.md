@@ -49,3 +49,28 @@ we’ll need to use lists and dictionaries with our `while` loops.
 `for` loop is effective for looping through a list, but you shouldn’t modify
 a list inside a for loop because Python will have trouble keeping track of the
 items in the list.
+
+##### Moving Items from One List to Another
+Using a `while` loop to pull users from the list of unconfirmed users as we verify them and then add them to a separate list of confirmed users. Here's what that code might look like:
+
+```
+chapter7/confirmed_users.py
+```
+
+#### Removing All Instances of Specific Values from a List
+to remove all instances of a value from a list?
+
+```
+chapter7/pets.py
+```
+
+#### Filling a Dictionary with User Input
+You can prompt for as much input as you need in each pass through a while
+loop. Let’s make a polling program in which each pass through the loop
+prompts for the participant’s name and response. We’ll store the data we
+gather in a dictionary, because we want to connect each response with a
+particular user
+
+```
+chapter7/mountain_poll.py
+```

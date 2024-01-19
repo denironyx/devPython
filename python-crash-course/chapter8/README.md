@@ -86,3 +86,10 @@ what kind of information you’ll receive.
 ```
 chapter8/user_profile.py
 ```
+The definition of build_profile() expects a first and last name, and
+then it allows the user to pass in as many name-value pairs as they want. The
+double asterisks before the parameter **user_info cause Python to create
+an empty dictionary called user_info and pack whatever name-value pairs
+it receives into this dictionary.
+Note: You’ll often see the parameter name **kwargs used to collect non-specific keyword
+arguments.

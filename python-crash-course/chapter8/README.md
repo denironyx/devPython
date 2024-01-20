@@ -93,3 +93,54 @@ an empty dictionary called user_info and pack whatever name-value pairs
 it receives into this dictionary.
 Note: You’ll often see the parameter name **kwargs used to collect non-specific keyword
 arguments.
+
+### Storing Your Function in Modules
+One advantage of functions is the way they separate blocks of code from
+your main program. By using descriptive names for your functions, your
+main program will be much easier to follow. You can go a step further by
+storing your functions in a separate file called a module and then importing
+that module into your main program. An `import` statement tells Python to
+make the code in a module available in the currently running program file.
+
+Storing your functions in a separate file allows you to hide the details of your program's code and focus on its higher-level logic. It also allows you to reuse functions in many different programs. When you store your functions in separate files, you can share those files with other programmers without having to share your entire program.
+
+#### Importing an Entire Module
+To start importing functions, we first need to create a module. A module
+is a file ending in **`.py`** that contains the code you want to import into your program.
+
+```
+chapter8/making_pizzas.py
+```
+
+#### Importing Specific Functions
+Importing a specific function from a module, require a particular syntax
+```
+from module_name import function_name
+```
+You can import as many functions as you want from a module by separating each function's name with a commaa.
+
+```
+from module_name import function_name, function_name_2, function_name_3
+```
+
+#### Using as to Give a Function an Alias
+If the name of a function you're importing might conflict with an existing name in your program or if the function name is long, you can use a short, unique alias -- an alternate name similar to a nickname for the function. 
+
+Here we give the function `make_pizza()` an alias, `mp()` by importing make_pizza as mp
+
+
+#### Importing All Functions in a Module
+The asterisk in the import statement tells Python to copy every function
+from the module pizza into this program file. Because every function
+is imported, you can call each function by name without using the dot
+notation. However, it’s best not to use this approach when you’re working
+with larger modules that you didn’t write: if the module has a function
+name that matches an existing name in your project, you can get some
+unexpected results. Python may see several functions or variables with the
+same name, and instead of importing all the functions separately, it will
+overwrite the functions.
+The best approach is to import the function or functions you want or import the entire module and usee dot notation. This leads to clear code that's easy to read and understand.
+
+```
+from module_name import *
+```

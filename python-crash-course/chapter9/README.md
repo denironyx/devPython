@@ -44,3 +44,10 @@ result in errors that are difficult to identify.
 
 #### Working with Classes and Instances
 You can use classes to represent many real-world situations. Once you write a class, you'll spend most of your time working with instances created from that class. One of the first tasks you'll want to do is modify the attributes associated with a particular instance. You can modify the attributes of an instance directly or write methods that update attributes in specific ways.
+
+#### Incrementing an Attribute’s Value Through a Method
+Sometimes you’ll want to increment an attribute’s value by a certain
+amount rather than set an entirely new value. Say we buy a used car and
+put 100 miles on it between the time we buy it and the time we register it.
+Here’s a method that allows us to pass this incremental amount and add
+that value to the odometer reading:

@@ -51,3 +51,9 @@ amount rather than set an entirely new value. Say we buy a used car and
 put 100 miles on it between the time we buy it and the time we register it.
 Here’s a method that allows us to pass this incremental amount and add
 that value to the odometer reading:
+```chapter9/car.py```
+
+You can use methods like this to control how users of your program update values
+such as an odometer reading, but anyone with access to the program can set the odometer
+reading to any value by accessing the attribute directly. Effective security takes
+extreme attention to detail in addition to basic checks like those shown here.

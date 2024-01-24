@@ -72,3 +72,23 @@ When you’re writing a new class based on an existing class, you’ll often
 want to call the `__init__()` method from the parent class. This will initialize
 any attributes that were defined in the parent `__init__()` method and make
 them available in the child class.
+
+```chapter9/electric_car.py```
+
+There’s no limit to how much you can specialize the `ElectricCar` class.
+You can add as many attributes and methods as you need to model an electric
+car to whatever degree of accuracy you need. An attribute or method
+that could belong to any car, rather than one that’s specific to an electric
+car, should be added to the Car class instead of the `ElectricCar` class.
+
+#### Overriding Methods from the Parent Class
+You can override any method from the parent class that doesn’t fit what
+you’re trying to model with the child class. To do this, you define a method
+in the child class with the same name as the method you want to override in
+the parent class. Python will disregard the parent class method and only
+pay attention to the method you define in the child class.
+Say the class `Car` had a method called `fill_gas_tank()`. This method is
+meaningless for an all-electric vehicle, so you might want to override this
+method.
+
+#### Instances as Attributes

@@ -57,3 +57,18 @@ You can use methods like this to control how users of your program update values
 such as an odometer reading, but anyone with access to the program can set the odometer
 reading to any value by accessing the attribute directly. Effective security takes
 extreme attention to detail in addition to basic checks like those shown here.
+
+### Inheritance
+You don't alwaays have to start from scratch when writing a class. If the class
+you’re writing is a specialized version of another class you wrote, you can
+use inheritance. When one class inherits from another, it takes on the attributes
+and methods of the first class. The original class is called the parent
+class, and the new class is the child class. The child class can inherit any
+or all of the attributes and methods of its parent class, but it’s also free to
+define new attributes and methods of its own.
+
+#### The __init__() Method for a Child Class
+When you’re writing a new class based on an existing class, you’ll often
+want to call the `__init__()` method from the parent class. This will initialize
+any attributes that were defined in the parent `__init__()` method and make
+them available in the child class.

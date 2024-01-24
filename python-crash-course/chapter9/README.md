@@ -92,3 +92,9 @@ meaningless for an all-electric vehicle, so you might want to override this
 method.
 
 #### Instances as Attributes
+When modeling something from the real world in code, you may find that
+you’re adding more and more detail to a class. You’ll find that you have a
+growing list of attributes and methods and that your files are becoming
+lengthy. In these situations, you might recognize that part of one class can
+be written as a separate class. You can break your large class into smaller
+classes that work together.

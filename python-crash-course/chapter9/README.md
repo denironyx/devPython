@@ -120,3 +120,17 @@ your code is working as you want it to, you’re doing well! Don’t be discoura
 if you find you’re ripping apart your classes and rewriting them several
 times using different approaches. In the quest to write accurate, efficient
 code, everyone goes through this process.
+
+##### Importing Classes
+As you add more functionality to your classes, your files can get long, even
+when you use inheritance properly. In keeping with the overall philosophy
+of Python, you’ll want to keep your files as uncluttered as possible. To help,
+Python lets you store classes in modules and then import the classes you
+need into your main program.
+
+##### Importing a Single Class
+Let’s create a module containing just the Car class. This brings up a subtle
+naming issue: we already have a file named car.py in this chapter, but this
+module should be named car.py because it contains code representing a car.
+We’ll resolve this naming issue by storing the Car class in a module named
+car.py, replacing the car.py file we were previously using.

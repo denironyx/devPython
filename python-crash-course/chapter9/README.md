@@ -98,3 +98,25 @@ growing list of attributes and methods and that your files are becoming
 lengthy. In these situations, you might recognize that part of one class can
 be written as a separate class. You can break your large class into smaller
 classes that work together.
+
+#### Modeling Real-World Objects
+As you begin to model more complicated things like electric cars, you’ll
+wrestle with interesting questions. Is the range of an electric car a property
+of the battery or of the car? If we’re only describing one car, it’s probably
+fine to maintain the association of the method get_range() with the Battery
+class. But if we’re describing a manufacturer’s entire line of cars, we probably
+want to move get_range() to the ElectricCar class. The get_range() method
+would still check the battery size before determining the range, but it would
+report a range specific to the kind of car it’s associated with.
+
+This brings you to an interesting point in your growth as a programmer.
+When you wrestle with questions like these, you’re thinking at a higher
+logical level rather than a syntax-focused level. You’re thinking not about
+Python, but about how to represent the real world in code. When you reach
+this point, you’ll realize there are often no right or wrong approaches to
+modeling real-world situations. Some approaches are more efficient than
+others, but it takes practice to find the most efficient representations. If
+your code is working as you want it to, you’re doing well! Don’t be discouraged
+if you find you’re ripping apart your classes and rewriting them several
+times using different approaches. In the quest to write accurate, efficient
+code, everyone goes through this process.

@@ -134,3 +134,14 @@ naming issue: we already have a file named car.py in this chapter, but this
 module should be named car.py because it contains code representing a car.
 We’ll resolve this naming issue by storing the Car class in a module named
 car.py, replacing the car.py file we were previously using.
+
+#### Storing Multiple Classes in a Module
+You can store as many classes as you need in a single module, although
+each class in a module should be related somehow. The classes Battery
+and ElectricCar both help represent cars, so let’s add them to the module
+car.py.
+
+#### Importing Multiple Classes from a Module
+You can import as many classes as you need into a program file. If we
+want to make a regular car and an electric car in the same file, we need
+to import both classes, Car and ElectricCar

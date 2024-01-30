@@ -26,3 +26,11 @@ formatting that allows a browser to display it.
 To begin, we need a file with a few lines of text in it. Let’s start with a file
 that contains pi to 30 decimal places, with 10 decimal places per line
 `chapter10/file_reader.py`
+
+### Writing to a File
+One of the simplest ways to save data is to write it to a file. When you write
+text to a file, the output will still be available after you close the terminal
+containing your program’s output. You can examine output after a program
+finishes running, and you can share the output files with others as well. You
+can also write programs that read the text back into memory and work with
+it again later.

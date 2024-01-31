@@ -34,3 +34,12 @@ containing your program’s output. You can examine output after a program
 finishes running, and you can share the output files with others as well. You
 can also write programs that read the text back into memory and work with
 it again later.
+
+### Exceptions
+Python uses special objects called exceptions to manage errors that arise during
+a program’s execution. Whenever an error occurs that makes Python
+unsure what to do next, it creates an exception object. If you write code
+that handles the exception, the program will continue running. If you don’t
+handle the exception, the program will halt and show a traceback, which
+includes a report of the exception that was raised.
+Exceptions are handled with try-except blocks. A

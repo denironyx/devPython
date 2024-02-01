@@ -42,4 +42,14 @@ unsure what to do next, it creates an exception object. If you write code
 that handles the exception, the program will continue running. If you don’t
 handle the exception, the program will halt and show a traceback, which
 includes a report of the exception that was raised.
-Exceptions are handled with try-except blocks. A
+Exceptions are handled with try-except blocks. 
+
+Exceptions are handle with try-except blocks. A try-except block asks Python to do something, but it also tells Python what to do if an exception is raised. When you use try-except blocks, your programs will continue running even if things start to go wrong. Instead of tracebacks, which can be confusing for users to read, users will see friendly errorr messages that you write.
+
+##### Handling the ZeroDivisionError Exception
+
+The error reported at u in the traceback, ZeroDivisionError, is an exception
+object. Python creates this kind of object in response to a situation
+where it can’t do what we ask it to. When this happens, Python stops the
+program and tells us the kind of exception that was raised. We can use this
+information to modify our program.

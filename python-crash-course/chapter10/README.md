@@ -69,3 +69,9 @@ attacks to use against your code.
 We can make this program more error resistant by wrapping the line that
 might produce errors in a try-except block. The error occurs on the line
 that performs the division, so that’s where we’ll put the try-except block
+
+#### Handling the FileNotFoundError Exception
+One common issue when working with files is handling missing files. The
+file you’re looking for might be in a different location, the filename may
+be misspelled, or the file may not exist at all. You can handle all of these
+situations in a straightforward way with a try-except block.

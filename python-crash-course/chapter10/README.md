@@ -118,3 +118,10 @@ json.load().
 
 ##### Saving and Reading User-Generated Data
 Saving data with json is useful when you're working with user-generated data, because if you don't store store your user's information somehow. You'll lose it when the program stops running. 
+
+
+##### Refactoring 
+Often, you’ll come to a point where your code will work, but you’ll recognize
+that you could improve the code by breaking it up into a series of functions
+that have specific jobs. This process is called refactoring. Refactoring
+makes your code cleaner, easier to understand, and easier to extend.

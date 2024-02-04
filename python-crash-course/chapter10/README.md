@@ -125,3 +125,14 @@ Often, you’ll come to a point where your code will work, but you’ll recogniz
 that you could improve the code by breaking it up into a series of functions
 that have specific jobs. This process is called refactoring. Refactoring
 makes your code cleaner, easier to understand, and easier to extend.
+
+```chapter10/remember.py```
+
+The new function get_stored_username() has a clear purpose, as stated
+in the docstring at u. This function retrieves a stored username and returns
+the username if it finds one. If the file username.json doesn’t exist, the function
+returns None v. This is good practice: a function should either return
+the value you’re expecting, or it should return None. This allows us to perform
+a simple test with the return value of the function. At w we print a
+welcome back message to the user if the attempt to retrieve a username
+was successful, and if it doesn’t, we prompt for a new username.

@@ -106,3 +106,8 @@ of a network connection, there is a possibility of an exception being
 raised. A little experience will help you know where to include exception
 handling blocks in your program and how much to report to users about
 errors that arise.
+
+#### Storing Data
+Many of your programs will ask users to input certain kinds of information. You might allow users to store preferences in a game or provide data for a visualization. Whatever the focus of your program is, you'll store the information users provide in data structures suchh as lists and dictionaries. When users close a program, you'll almost always want to save the information they entered. A simple way to do this involves storing your data using the json module.
+
+##### using json.dump() and json.load()

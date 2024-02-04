@@ -111,3 +111,10 @@ errors that arise.
 Many of your programs will ask users to input certain kinds of information. You might allow users to store preferences in a game or provide data for a visualization. Whatever the focus of your program is, you'll store the information users provide in data structures suchh as lists and dictionaries. When users close a program, you'll almost always want to save the information they entered. A simple way to do this involves storing your data using the json module.
 
 ##### using json.dump() and json.load()
+Let’s write a short program that stores a set of numbers and another program
+that reads these numbers back into memory. The first program will
+use json.dump() to store the set of numbers, and the second program will use
+json.load().
+
+##### Saving and Reading User-Generated Data
+Saving data with json is useful when you're working with user-generated data, because if you don't store store your user's information somehow. You'll lose it when the program stops running. 

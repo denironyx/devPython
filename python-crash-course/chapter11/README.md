@@ -43,4 +43,18 @@ those changes broke the desired behavior.
 ###### Adding New Tests
 Now that we know get_formatted_name() works for simple names again, let’s
 write a second test for people who include a middle name. We do this by
-adding another method to the class NamesTestCase:
+adding another method to the class NamesTestCase
+
+##### Testing a Class 
+In the first part of this chapter, you wrote tests for a single function. Now
+you’ll write tests for a class. You’ll use classes in many of your own programs,
+so it’s helpful to be able to prove that your classes work correctly. If you have
+passing tests for a class you’re working on, you can be confident that improvements
+you make to the class won’t accidentally break its current behavior.
+
+##### A Class to Test
+Testing a class is similar to testing a function—much of your work involves
+testing the behavior of the methods in the class. But there are a few differences,
+so let’s write a class to test. Consider a class that helps administer
+anonymous surveys
+

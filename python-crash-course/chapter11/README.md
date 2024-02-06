@@ -24,3 +24,18 @@ and the function you want to test. Then create a class that inherits from
 unittest.
 
 ```chapter11/test_name_function.py```
+
+#### A Failing Test
+What does a failing test look like? Let’s modify get_formatted_name() so it can
+handle middle names, but we’ll do so in a way that breaks the function for
+names with just a first and last name, like Janis Joplin.
+
+```chapter11/test_name_function.py```
+
+##### Responding to a Failed Test
+What do you do when a test fails? Assuming you’re checking the right conditions,
+a passing test means the function is behaving correctly and a failing
+test means there’s an error in the new code you wrote. So when a test
+fails, don’t change the test. Instead, fix the code that caused the test to fail.
+Examine the changes you just made to the function, and figure out how
+those changes broke the desired behavior.

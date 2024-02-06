@@ -39,3 +39,8 @@ test means there’s an error in the new code you wrote. So when a test
 fails, don’t change the test. Instead, fix the code that caused the test to fail.
 Examine the changes you just made to the function, and figure out how
 those changes broke the desired behavior.
+
+###### Adding New Tests
+Now that we know get_formatted_name() works for simple names again, let’s
+write a second test for people who include a middle name. We do this by
+adding another method to the class NamesTestCase:

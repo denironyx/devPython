@@ -58,3 +58,12 @@ testing the behavior of the methods in the class. But there are a few difference
 so let’s write a class to test. Consider a class that helps administer
 anonymous surveys
 
+Assert Methods Available from the unittest Module
+
+- assertEqual(a, b) Verify that a == b
+- assertNotEqual(a, b) Verify that a != b
+- assertTrue(x) Verify that x is True
+- assertFalse(x) Verify that x is False
+- assertIn(item, list) Verify that item is in list
+- assertNotIn(item, list) Verify that item is not in list
+ 

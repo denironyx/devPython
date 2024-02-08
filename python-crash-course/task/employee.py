@@ -22,10 +22,12 @@ class Employee:
         salary = self.annual_salary
         return salary
     
-    def give_raise(self, raises):
-        """Add the given amount to the annual salary"""
-        self.annual_salary += raises
-        print(f"5,000 annual increase")
+    def give_raise(self, raise_amount=5000):
+        """Add the given amount to the annual salary (default: $5,000)"""
+        self.annual_salary += raise_amount
+        print(f"{raise_amount} annual increase")
 
-employees = Employee("Dennis", "Irorere", 5000)
-print(employees.get_employee_name())
+employees = Employee("Dennis", "Irorere", 10000)
+raise_ = employees.give_raise()
+print(f"Name of employee: {employees.get_employee_name()} & Salary: {employees.get_salary()} Next year: {raise_}")
+

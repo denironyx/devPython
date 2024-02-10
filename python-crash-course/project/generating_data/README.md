@@ -22,3 +22,6 @@ can analyze nonnumerical data as well.
 To use Matplotlib for your initial set of visualizations, you’ll need to install
 it using pip, a module that downloads and installs Python packages. Enter
 the following command at a terminal prompt:
+
+#### Plotting a Simple Line Graph
+Let's plot a simple line graph using Matplotlib, and then customize it to create a more informative data visualization.

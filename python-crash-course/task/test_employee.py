@@ -16,6 +16,10 @@ class TestEmployee(unittest.TestCase):
     def test_salary(self):
         """Test the salary"""
         self.assertEqual(self.my_employee.get_salary(), self.salary)    
-        
+    
+    def test_raise_amount(self):
+        """Test the raise amount is fixed for 5000 yearly"""
+        self.assertEqual(self.my_employee.give_raise(), 15000)
+         
 if __name__ == '__main__':
     unittest.main()

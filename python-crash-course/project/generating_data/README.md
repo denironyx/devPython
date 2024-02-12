@@ -45,3 +45,9 @@ The set_xlabel() and set_ylabel() methods allow you to set a title for
 each of the axes , and the method tick_params() styles the tick marks .
 The arguments shown here affect the tick marks on both the x- and y-axes
 (axis='both') and set the font size of the tick mark labels to 14 (labelsize=14).
+
+
+#### Calculating Data Automatically
+Writing lists by hand can be inefficient, especially when we have many
+points. Rather than passing our points in a list, let’s use a loop in Python
+to do the calculations for us.

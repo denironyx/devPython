@@ -51,3 +51,12 @@ The arguments shown here affect the tick marks on both the x- and y-axes
 Writing lists by hand can be inefficient, especially when we have many
 points. Rather than passing our points in a list, let’s use a loop in Python
 to do the calculations for us.
+
+
+#### Rolling Dice with Plotly
+In this section, we’ll use the Python package Plotly to produce interactive
+visualizations. Plotly is particularly useful when you’re creating visualizations
+that will be displayed in a browser, because the visualizations will scale
+automatically to fit the viewer’s screen. Visualizations that Plotly generates
+are also interactive; when the user hovers over certain elements on the
+screen, information about that element is highlighted.

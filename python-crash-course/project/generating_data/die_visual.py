@@ -9,5 +9,11 @@ results = []
 for roll_num in range(100):
     result = die.roll()
     results.append(result)
+
+# Analyze the results.
+frequencies = []
+for value in range(1, die.num_sides + 1):
+    freqency = results.count(value)
+    frequencies.append(freqency)
     
 print(results)

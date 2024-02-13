@@ -10,7 +10,7 @@ while True:
 
     # plot the points in the walk.
     plt.style.use('classic')
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(15,9))
     point_numbers = range(rw.num_points)
     
     # adding plot points

@@ -60,3 +60,8 @@ that will be displayed in a browser, because the visualizations will scale
 automatically to fit the viewer’s screen. Visualizations that Plotly generates
 are also interactive; when the user hovers over certain elements on the
 screen, information about that element is highlighted.
+
+#### Making a Histogram
+With a list of frequencies, we can make a histogram of the results. A histogram
+is a bar chart showing how often certain results occur. Here’s the code
+to create the histogram:

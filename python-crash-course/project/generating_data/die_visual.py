@@ -5,6 +5,7 @@ from die import Die
 # Create a D6
 die = Die()
 
+
 # Make some rolls, and store results in a list.
 results = []
 

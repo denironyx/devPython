@@ -23,7 +23,7 @@ print(highs)
 # plot the high and low temperature
 #plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(highs, c='red')
+ax.plot(dates, highs, c='red')
 ax.plot(dates, lows, c='blue')
 
 # format plot 

@@ -6,6 +6,6 @@ with open(filename) as f:
     all_eq_data = json.load(f)
 
 # Examing JSON data    
-readable_file = 'data/readable_eq_data.json'
+readable_file = 'processed/readable_eq_data.json'
 with open(readable_file, 'w') as f:
     json.dump(all_eq_data, f, indent=4)

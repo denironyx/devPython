@@ -13,7 +13,7 @@ with open(readable_file, 'w') as f:
 # Making a List of All Earthquakes
 all_eq_dicts = all_eq_data['features']
 
-# Extracting magnitudes
+# Extracting magnitudes and location data
 mags, lons, lats = [], [], []
 for eq_dict in all_eq_dicts:
     mag = eq_dict['properties']['mag']

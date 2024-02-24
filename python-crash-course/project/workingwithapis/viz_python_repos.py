@@ -33,8 +33,16 @@ data = [{
 
 my_layout = {
     'title': 'Most-starred python projects on Github',
-    'xaxis': {'title': 'Repository'},
-    'yaxis': {'title': 'Stars'},
+    'xaxis': {
+        'title': 'Repository',
+        'titlefont': {'size': 24},
+        'tickfont': {'size': 14},
+    },
+    'yaxis': {
+        'title': 'Stars',
+        'titlefont': {'size': 24},
+        'tickfont': {'size': 14},
+    },
 }
 
 fig = {'data': data, 'layout': my_layout}
